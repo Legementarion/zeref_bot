@@ -1,14 +1,14 @@
-from io import BytesIO
+#! /usr/bin/python
 
+from io import BytesIO
 from PIL import Image
+from dhooks import Webhook, File
 import config
 import telebot
 import json
 import requests
 import urllib.request
 import tempfile
-
-from dhooks import Webhook, File
 
 hook = Webhook(config.discord_web_hook)
 
